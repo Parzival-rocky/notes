@@ -2,6 +2,19 @@
 date: [15:40, 2025-03-07]
 ---
 
+## Types of machine learning
+
+### 1. Supervised learning 
+You're give a set of input and output data and based on that you're asked for future input data to provide an output data.
+
+So you're given a data with pre-defined clusters. The goal is for a new data to classify it to the existing cluster
+
+### 2. Unsupervised learning 
+For an input data, the goal is to generate a cluster based on the input. So the cluster are not pre-defined(given)
+
+A common way to go about it is:
+- Principal Component Analysis (PCA)
+- Topological methods
 
 ## High level steps in machine learning 
 
@@ -41,7 +54,7 @@ Jupyter notebook:
 ```python 
 import pandas as pd
 
-# returns a dataset ofbject which is similar to an excel spreadsheet
+# returns a dataset object which is similar to an excel spreadsheet
 df = pd.read_csv("fileName.csv")
 
 # display dataframe
@@ -58,7 +71,7 @@ df.describe()
 df.values
 ```
 
-### Desgning a simple model:
+### Designing a simple model:
 
 ```python 
 import pandas as pd
@@ -110,7 +123,7 @@ predictions = model.predict(X_test)
 score = accuracy_score(y_test, predictions)
 ```
 
-### Model persistance
+### Model persistence
 
 To store the model first:
 ```python 
