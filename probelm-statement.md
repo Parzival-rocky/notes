@@ -89,10 +89,14 @@ Process:
     - leak present: if methane concentration > 0 
     - leak absent: if methane conceentration = 0
 - once leak is detected! use a regression model to predict the methane concentration level using the same meteorological data
+- use the output of the regression model to determine where the drone should fly next
+- map a dynamic methane conentration map
 
 Output: 
 - classification model: outputs methane detection (boolean Yes/No) 
 - regression model: predicts methane concentration intensity (integer value)
+- drone navigation: using the predicted methane concentration intensity
+- dynamic methane distribution map
 
 #tags
 
